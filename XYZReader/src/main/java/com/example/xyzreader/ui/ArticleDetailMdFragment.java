@@ -137,7 +137,7 @@ public class ArticleDetailMdFragment extends Fragment implements
             public boolean onMenuItemClick(MenuItem item) {
                 startActivity(Intent.createChooser(ShareCompat.IntentBuilder.from(getActivity())
                         .setType("text/plain")
-                        .setText("Some sample text")
+                        .setText(mCursor.getString(ArticleLoader.Query.TITLE)+"\n"+subTitle)
                         .getIntent(), getString(R.string.action_share)));
                 return true;
             }
@@ -158,8 +158,10 @@ public class ArticleDetailMdFragment extends Fragment implements
                     iv_scrim.setVisibility(View.GONE);
                 } else if (verticalOffset == 0) {
                     iv_scrim.setVisibility(View.VISIBLE);
+                    floatingActionButton.setAlpha(0.8f);
                 } else {
                     iv_scrim.setVisibility(View.GONE);
+                    floatingActionButton.setAlpha(1f);
                 }
             }
         });
@@ -171,7 +173,7 @@ public class ArticleDetailMdFragment extends Fragment implements
             public void onClick(View view) {
                 startActivity(Intent.createChooser(ShareCompat.IntentBuilder.from(getActivity())
                         .setType("text/plain")
-                        .setText("Some sample text")
+                        .setText(mCursor.getString(ArticleLoader.Query.TITLE)+"\n"+subTitle)
                         .getIntent(), getString(R.string.action_share)));
             }
         });
