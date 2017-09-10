@@ -1,0 +1,53 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    style="@style/CardViewTileStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/content_padding">
+
+        <!--suppress AndroidLintContentDescription -->
+        <com.example.xyzreader.ui.DynamicHeightNetworkImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="@color/photo_placeholder"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/scrim_height"
+            android:layout_gravity="bottom"
+            android:background="@color/background_scrim"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/scrim_text_padding">
+
+            <TextView
+                android:id="@+id/article_title"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/ltgray"
+                />
+
+            <TextView
+                android:id="@+id/article_subtitle"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="@dimen/scrim_text_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="start"
+                android:maxLines="1"
+                android:textColor="@color/ltgray"
+                android:visibility="visible" />
+        </LinearLayout>
+    </FrameLayout>
+</android.support.v7.widget.CardView>

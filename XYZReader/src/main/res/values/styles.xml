@@ -1,0 +1,88 @@
+<!-- File created by the Android Action Bar Style Generator
+
+     Copyright (C) 2012 readyState Software Ltd
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+
+    <style name="MyTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorPrimary">@color/theme_primary</item>
+        <!--   darker variant for the status bar and contextual app bars -->
+        <item name="android:colorPrimaryDark">@color/theme_primary_dark</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="android:colorAccent">@color/theme_accent</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">false</item>
+        <item name="android:windowAllowReturnTransitionOverlap">false</item>
+
+    </style>
+
+    <style name="CustomDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="MyActionBarTitleCollapse" parent="@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/action_bar_text_collapse</item>
+    </style>
+
+    <style name="MyActionBarSubtitleCollapse" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle">
+        <item name="android:textColor">@color/action_bar_text_collapse</item>
+    </style>
+
+    <style name="MyActionBarTitleExpand" parent="@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/action_bar_text_expand</item>
+    </style>
+
+    <style name="MyActionBarSubtitleExpand" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/action_bar_text_expand</item>
+    </style>
+
+    <style name="MyFab" parent="Widget.Design.FloatingActionButton">
+        <item name="android:layout_width">@dimen/fab_size</item>
+        <item name="android:layout_height">@dimen/fab_size</item>
+        <item name="android:backgroundTint">@color/theme_accent</item>
+        <item name="android:layout_marginEnd">@dimen/fab_margin_end</item>
+    </style>
+
+    <style name="MyActionbar" parent="Base.Widget.AppCompat.ActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?android:actionBarSize</item>
+    </style>
+
+    <style name="MyAppbarLayout" parent="Widget.Design.AppBarLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/app_bar_layout_height</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <style name="MyCollapsingToolbarLayout" parent="Widget.Design.CollapsingToolbar">
+        <item name="collapsedSubtitleAppearance">@style/MyActionBarSubtitleCollapse</item>
+        <item name="collapsedTitleTextAppearance">@style/MyActionBarTitleCollapse</item>
+        <item name="expandedSubtitleAppearance">@style/MyActionBarSubtitleExpand</item>
+        <item name="expandedTitleTextAppearance">@style/MyActionBarTitleExpand</item>
+        <item name="contentScrim">@color/theme_primary</item>
+        <item name="expandedTitleMarginBottom">0dp</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <style name="CardViewTileStyle">
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="cardCornerRadius">0dp</item>
+        <item name="elevation">0dp</item>
+    </style>
+</resources>
