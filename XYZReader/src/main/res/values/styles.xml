@@ -18,11 +18,11 @@
 <resources>
 
     <style name="MyTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
-        <item name="android:colorPrimary">@color/theme_primary</item>
+        <item name="colorPrimary">@color/theme_primary</item>
         <!--   darker variant for the status bar and contextual app bars -->
-        <item name="android:colorPrimaryDark">@color/theme_primary_dark</item>
+        <item name="colorPrimaryDark">@color/theme_primary_dark</item>
         <!--   theme UI controls like checkboxes and text fields -->
-        <item name="android:colorAccent">@color/theme_accent</item>
+        <item name="colorAccent">@color/theme_accent</item>
         <item name="android:windowContentTransitions">true</item>
         <item name="android:windowAllowEnterTransitionOverlap">false</item>
         <item name="android:windowAllowReturnTransitionOverlap">false</item>
@@ -55,7 +55,6 @@
     <style name="MyFab" parent="Widget.Design.FloatingActionButton">
         <item name="android:layout_width">@dimen/fab_size</item>
         <item name="android:layout_height">@dimen/fab_size</item>
-        <item name="android:backgroundTint">@color/theme_accent</item>
         <item name="android:layout_marginEnd">@dimen/fab_margin_end</item>
     </style>
 
